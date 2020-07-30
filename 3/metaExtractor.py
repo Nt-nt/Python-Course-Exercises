@@ -9,7 +9,7 @@ outFolder = rootFolder / "out"
 tilesFolder = rootFolder / "tiles/"
 dataFilePath = outFolder / "data.json"
 
-if not os.path.isdir(rootFolder / outFolder):
+if not os.path.isdir(outFolder):
     os.mkdir(outFolder)
 
 
