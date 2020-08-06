@@ -5,7 +5,7 @@ import json
 
 # Folder of this script
 rootFolder = Path(os.path.dirname(os.path.realpath(__file__)))
-outFolder = rootFolder / "out"
+outFolder = rootFolder / "outputs"
 imagesFolder = rootFolder / "inputs"
 
 # Create the outputs folder if it doesn't exist

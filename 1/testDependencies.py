@@ -7,6 +7,7 @@ import cv2
 ##########################
 
 # Print dependency versions
+# Your versions might be different
 print(np.__version__)  # 1.18.3
 print(imutils.__version__)  # 0.5.3
 print(PIL.__version__)  # 7.0.0
