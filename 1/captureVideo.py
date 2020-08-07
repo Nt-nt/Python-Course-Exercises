@@ -3,7 +3,7 @@ from imutils.video import FPS
 
 # Create a capture video object.
 # Try replacing 1 with 0 if it doesn't work
-capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(0)
 
 # Define the video resolution.
 capture.set(cv2.CAP_PROP_FRAME_WIDTH,  640)
@@ -19,7 +19,7 @@ fps = FPS().start()
 # while the user do not press the "q" (quit) keyboard button.
 while True:
     # Capture the frame
-    retval, frames = capture.read()
+    retval, frame = capture.read()
 
     # Update the FPS counter.
     fps.update()
@@ -29,8 +29,10 @@ while True:
         break
 
     # Display the resulting frame.
-    cv2.imshow("Video", frames)
-    if cv2.waitKey(1) & 0xFF == ord("q"):
+    cv2.imshow("Video", frame)
+
+    key = cv2.waitKey(1)
+    if key & 0xFF == ord("q"):
         break
 
 # Stop the timer and display FPS information.
