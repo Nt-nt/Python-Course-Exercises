@@ -15,3 +15,7 @@ cv2.waitKey(0)
 
 # When everything done, release the OpenCV window.
 cv2.destroyAllWindows()
+
+
+#/Users/macbook/Documents/Python-Course-Exercises/1/inputs/lena.jpg
+#1/inputs/lena.jpg

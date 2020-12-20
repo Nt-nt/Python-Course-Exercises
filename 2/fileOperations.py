@@ -43,6 +43,15 @@ for fileName in os.listdir(imagesFolder):
 
 # Save the list
 dataFilePath = outFolder / "data.json"
-with open(dataFilePath, 'w') as outfile:
-    print("Saving to:", dataFilePath)
-    json.dump(imgs_data, outfile)
+#with open(dataFilePath, 'w') as outfile:
+ #   print("Saving to:", dataFilePath)
+  #  json.dump(imgs_data, outfile)
+
+o = open(dataFilePath, 'w')
+json.dump(imgs_data, o)
+o.close()
+
+
+o = open(dataFilePath, 'r')
+print(json.load(o))
+o.close()

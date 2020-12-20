@@ -25,3 +25,8 @@ imgs_data = []
 # - The absolute path of the image
 # - Number of color channels (Hint: use 'img.shape')
 ################################################
+
+# Fotoğraflar ile ilgili bilgileri bir JSON dosyasına kaydet. Bilgilerde:
+# - Fotoğrafın en, boy ve renk derinliği
+# - Fotoğrafın uzun dosya konumu olmalı
+# Örnek: [{"path": "/home/ken/Documents/Course/Python-Course-Exercises/2/inputs/lena.jpg", "height": 512, "width": 512, "depth": 3}]

@@ -9,6 +9,7 @@ image_bgr = cv2.imread(filepath, cv2.IMREAD_COLOR)
 # Convert the input image from BGR to Grayscale
 grayscale = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2GRAY)
 
+# COnvert to HSV
 image_hsv = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2HSV)
 image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
 

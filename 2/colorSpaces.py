@@ -22,7 +22,7 @@ filename = str(rootFolder /
 
 # BGR image
 image = cv2.imread(filename)
-img_height, img_width = image.shape[:2]
+img_height, img_width, img_channels = image.shape
 
 # Convert images from BGR
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -38,7 +38,9 @@ r_channel = cv2.merge([channel_r, zeros, zeros])
 g_channel = cv2.merge([zeros, channel_g, zeros])
 b_channel = cv2.merge([zeros, zeros, channel_b])
 
-plt.imshow(b_channel)
+# plt.imshow(b_channel)
 
+cv2.imshow("resim", r_channel)
+cv2.waitKey(0)
 # Show the final image.
-plt.show()
+# plt.show()
